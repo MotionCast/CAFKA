@@ -1,0 +1,15 @@
+#
+# Copyright (c) 2023 mocast
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+# Starter configuration overlay for CAF power manager module.
+
+if CAFKA_POWER_MANAGER
+
+# choice PM_POLICY
+	# default PM_POLICY_CUSTOM
+# endchoice
+
+endif # CAFKA_POWER_MANAGER

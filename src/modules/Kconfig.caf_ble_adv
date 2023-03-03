@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2023 mocast
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+menu "Bluetooth LE Advertising"
+
+config CAFKA_BLE_ADV
+	bool "Enable the CAF BLE advertising module and its dependencies"
+	select CAFKA_BLE_STATE
+	select CAF_BLE_ADV
+	select CAF_PM_EVENTS
+	help
+	  Enable the CAF BLE state module and its dependencies
+
+endmenu

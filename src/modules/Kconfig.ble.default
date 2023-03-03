@@ -1,0 +1,30 @@
+#
+# Copyright (c) 2023 mocast
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+# Starter configuration overlay for CAF BLE state module.
+
+if CAFKA_BLE_STATE
+
+config BT_PERIPHERAL
+	default y
+	help
+	  By default, device is configured as peripheral.
+
+if BT_PERIPHERAL
+
+config BT_DEVICE_NAME
+	default "CAFKA"
+	help
+	  The default BT peripheral name to advertise under.
+
+config BT_DEVICE_APPEARANCE
+	default 1345
+	help
+	  The default BT peripheral appearance.
+
+endif # BT_PERIPHERAL
+
+endif # CAFKA_BLE_STATE

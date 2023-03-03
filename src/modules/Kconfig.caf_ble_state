@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2023 mocast
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+menu "Bluetooth LE State"
+
+config CAFKA_BLE_STATE
+	bool "Enable the CAF BLE state module and its dependencies"
+	select BT
+	select BT_SMP
+	select CAF_BLE_STATE
+	help
+	  Enable the CAF BLE state module and its dependencies
+
+endmenu

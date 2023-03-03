@@ -1,0 +1,47 @@
+#
+# Copyright (c) 2023 mocast
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+# Starter configuration overlay for CAF BLE advertising module.
+
+if CAF_BLE_ADV
+
+config CAF_BLE_ADV_DIRECT_ADV
+	default n
+	help
+	  By default, do not use direct advertising.
+
+config CAF_BLE_ADV_FAST_ADV
+	default n
+	help
+	  By default, do not use fast advertising.
+
+config CAF_BLE_ADV_FILTER_ACCEPT_LIST
+	default n
+	help
+	  By default, enable filter accept list.
+
+config BT_ADV_PROV_FLAGS
+	default y
+	help
+	  By default, add connection flags to advertising providers
+
+config BT_ADV_PROV_DEVICE_NAME
+	default y
+	help
+	  By default, add the device name to advertising providers
+
+config BT_ADV_PROV_GAP_APPEARANCE
+	default y
+	help
+	  By default, add GAP appearance to advertising providers
+
+config BT_ADV_PROV_TX_POWER
+	default y
+	help
+	  By default, add TX power to advertising providers
+
+
+endif # CAF_BLE_ADV

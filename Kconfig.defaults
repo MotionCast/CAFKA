@@ -4,8 +4,14 @@
 # SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
 #
 
-config TEST_CAF_COMMON
+# Core requirements for the Common Application Framework
+config CAFKA_COMMON
 	bool
 	default y
 	select APP_EVENT_MANAGER
 	select CAF
+
+config HEAP_MEM_POOL_SIZE
+	default 1024
+	help
+	  By default, CAF needs the heap size to be set.
