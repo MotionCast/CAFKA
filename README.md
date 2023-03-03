@@ -7,27 +7,52 @@ nRF Connect SDK, that allows you to enable modules without manually enabling
 their dependencies or configurations.
 
 
-### Features
+### Modules
 
-The following modules are available:
+The following modules are available, with more to come:
 
 - CAKFA_BLE_STATE: Bluetooth LE state module
 - CAFKA_BLE_ADV: Bluetooth LE advertising module
 
-More to come.
 
+### Enabling Modules
+
+To enable them, simply add the corresponding line to your prj.conf file.
+For instance:
+
+```
+# prj.conf
+CAFKA_BLE_STATE=y
+```
+
+Or better yet, add them as a dependency of your module:
+
+```Kconfig
+# src/modules/Kconfig.my_ble_module
+menu "My BLE State Module"
+
+config MY_BLE_STATE_MODULE_ENABLE
+	bool "Enable custom ble state module"
+	# select FEATURE
+	select CAFKA_BLE_STATE
+	help
+	  My custom module that reacts to BLE state events.
+
+endmenu
+
+```
+
+Then, add the your module to your prj.conf.
+
+```
+# prj.conf
+MY_BLE_STATE_MODULE_ENABLE=y
+```
 
 ### Configuration
 
 To fine tune the configuration of any module, modify the corresponding
 `Kconfig.[module].default` file located under `src/modules`.
-
-
-### Files
-
-- Kconfig.defaults
-- src/modules/Kconfig.caf_power_manager.default
-- src/modules/Kconfig.caf_ble_adv.default
 
 
 <!-- MODULES -->
