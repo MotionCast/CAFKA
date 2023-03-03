@@ -71,6 +71,12 @@ To fine tune the configuration of any module, modify the corresponding
 You should of course also be able to directly set them in `prj.conf`.
 
 
+## Licence
+
+This template is currently under the GNU General Public License v2.
+If you are interested in using this project under a different licence, simply raise an issue.
+
+
 <!-- MODULES -->
 [ble_state]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/ble_state.html
 [ble_adv]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/ble_adv.html
