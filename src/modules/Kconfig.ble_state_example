@@ -6,7 +6,7 @@
 
 menu "BLE State Example"
 
-config CONFIG_CAFKA_BLE_STATE_EXAMPLE
+config CAFKA_BLE_STATE_EXAMPLE
 	bool "Enable ble state test module"
 	select CAFKA_BLE_ADV
 	help

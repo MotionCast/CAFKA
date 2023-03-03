@@ -6,7 +6,7 @@
 
 menu "App State Example"
 
-config CONFIG_CAFKA_APP_STATE_EXAMPLE
+config CAFKA_APP_STATE_EXAMPLE
 	bool "Enable app state test module"
 	depends on CAF
 	depends on APP_EVENT_MANAGER
