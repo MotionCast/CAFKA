@@ -6,13 +6,15 @@
 
 menu "Application modules"
 
-rsource "Kconfig.ble.default"
-rsource "Kconfig.caf_ble_state"
-rsource "Kconfig.caf_ble_state.default"
-rsource "Kconfig.caf_ble_adv"
-rsource "Kconfig.caf_ble_adv.default"
 rsource "Kconfig.caf_power_manager"
 rsource "Kconfig.caf_power_manager.default"
+rsource "Kconfig.caf_settings_loader"
+
+rsource "Kconfig.ble.default"
+rsource "Kconfig.caf_ble_state"
+rsource "Kconfig.caf_ble_adv"
+rsource "Kconfig.caf_ble_adv.default"
+rsource "Kconfig.caf_ble_bond"
 
 # Custom modules
 rsource "Kconfig.app_state_example" # Barebones listener

@@ -6,14 +6,19 @@ CAFKA is a template built around the Common Application Framework of the
 nRF Connect SDK, that allows you to enable modules without manually enabling
 their dependencies or configurations.
 
+#### Disclaimer
+CAFKA is still experimental so you may run into some issues.
+You may post them under this repository and you will receive advice.
 
 ### Modules
 
 The following modules are available, with more to come:
 
-- CAKFA_BLE_STATE: Bluetooth LE state module
-- CAFKA_BLE_ADV: Bluetooth LE advertising module
-
+- CAKFA_BLE_STATE: Bluetooth LE state module ([docs][ble_state])
+- CAFKA_BLE_ADV: Bluetooth LE advertising module ([docs][ble_adv])
+- CAFKA_BLE_BOND: Bluetooth LE bond module ([docs][ble_bond])
+- CAFKA_POWER_MANAGER: Power manager module ([docs][power_mgr])
+- CAFKA_SETTINGS_LOADER: Settings loader module ([docs][settings])
 
 ### Enabling Modules
 
@@ -80,3 +85,6 @@ If you are interested in using this project under a different licence, simply ra
 <!-- MODULES -->
 [ble_state]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/ble_state.html
 [ble_adv]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/ble_adv.html
+[ble_bond]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/ble_bond.html
+[power_mgr]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/power_manager.html
+[settings]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/settings_loader.html

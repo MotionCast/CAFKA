@@ -9,6 +9,7 @@ menu "BLE State Example"
 config CAFKA_BLE_STATE_EXAMPLE
 	bool "Enable ble state test module"
 	select CAFKA_BLE_ADV
+	select CAFKA_BLE_BOND
 	help
 	  Enables a dummy module for testing that reacts to BLE state events
 
