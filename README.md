@@ -49,10 +49,26 @@ Then, add the your module to your prj.conf.
 MY_BLE_STATE_MODULE_ENABLE=y
 ```
 
+
+## Example Modules
+
+The following modules are included as placeholders that are supposed to react to different events:
+
+- app_state_example.c: Barebones module that listens to app_state_event.
+- ble_state_example.c: Listens to BLE peer_state_event.
+
+
+If you are using this repository as a template, you will want to either overwrite these
+or delete them, as well as their usages in `src/modules/CMakeLists.txt`, and their respective
+Kconfig files under `src/modules/`.
+
+
 ### Configuration
 
 To fine tune the configuration of any module, modify the corresponding
 `Kconfig.[module].default` file located under `src/modules`.
+
+You should of course also be able to directly set them in `prj.conf`.
 
 
 <!-- MODULES -->

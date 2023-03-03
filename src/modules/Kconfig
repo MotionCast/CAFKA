@@ -14,7 +14,8 @@ rsource "Kconfig.caf_ble_adv.default"
 rsource "Kconfig.caf_power_manager"
 rsource "Kconfig.caf_power_manager.default"
 
-rsource "Kconfig.app_state_test"
-rsource "Kconfig.ble_state_test"
+# Custom modules
+rsource "Kconfig.app_state_example" # Barebones listener
+rsource "Kconfig.ble_state_example" # Listens to BLE peer events
 
 endmenu

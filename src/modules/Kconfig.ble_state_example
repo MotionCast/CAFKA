@@ -1,0 +1,15 @@
+#
+# Copyright (c) 2023 mocast
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+menu "BLE State Example"
+
+config CONFIG_CAFKA_BLE_STATE_EXAMPLE
+	bool "Enable ble state test module"
+	select CAFKA_BLE_ADV
+	help
+	  Enables a dummy module for testing that reacts to BLE state events
+
+endmenu
