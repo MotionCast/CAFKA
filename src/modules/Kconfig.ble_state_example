@@ -11,6 +11,7 @@ config CAFKA_BLE_STATE_EXAMPLE
 	select CAFKA_BLE_ADV
 	select CAFKA_BLE_BOND
 	select CAFKA_LEDS
+	select CAFKA_BUTTONS
 	help
 	  Enables a dummy module for testing that reacts to BLE state events
 

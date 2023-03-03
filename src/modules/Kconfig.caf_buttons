@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2023 mocast
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+menu "Buttons"
+
+config CAFKA_BUTTONS
+	bool "Enable the CAF buttons module and its dependencies"
+	select CAF_BUTTONS
+	select GPIO
+	help
+	  Enable the CAF buttons module and its dependencies
+
+endmenu
