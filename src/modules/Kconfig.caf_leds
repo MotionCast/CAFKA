@@ -1,0 +1,18 @@
+#
+# Copyright (c) 2023 mocast
+#
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+menu "LEDS"
+
+config CAFKA_LEDS
+	bool "Enable the CAF LEDS module and its dependencies"
+	select PWM
+	select LED
+	select LED_PWM
+	select CAF_LEDS
+	help
+	  Enable the CAF LEDS module and its dependencies
+
+endmenu

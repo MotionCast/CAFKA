@@ -16,6 +16,8 @@ rsource "Kconfig.caf_ble_adv"
 rsource "Kconfig.caf_ble_adv.default"
 rsource "Kconfig.caf_ble_bond"
 
+rsource "Kconfig.caf_leds"
+
 # Custom modules
 rsource "Kconfig.app_state_example" # Barebones listener
 rsource "Kconfig.ble_state_example" # Listens to BLE peer events

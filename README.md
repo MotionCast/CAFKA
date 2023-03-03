@@ -19,6 +19,7 @@ The following modules are available, with more to come:
 - CAFKA_BLE_BOND: Bluetooth LE bond module ([docs][ble_bond])
 - CAFKA_POWER_MANAGER: Power manager module ([docs][power_mgr])
 - CAFKA_SETTINGS_LOADER: Settings loader module ([docs][settings])
+- CAFKA_LEDS: LED module ([docs][leds])
 
 ### Enabling Modules
 
@@ -88,3 +89,4 @@ If you are interested in using this project under a different licence, simply ra
 [ble_bond]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/ble_bond.html
 [power_mgr]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/power_manager.html
 [settings]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/settings_loader.html
+[leds]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/leds.html
