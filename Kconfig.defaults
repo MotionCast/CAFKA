@@ -1,0 +1,11 @@
+#
+# Copyright (c) 2022 Nordic Semiconductor ASA
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+config TEST_CAF_COMMON
+	bool
+	default y
+	select APP_EVENT_MANAGER
+	select CAF

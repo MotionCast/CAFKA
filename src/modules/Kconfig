@@ -1,0 +1,10 @@
+#
+# Copyright (c) 2018 Nordic Semiconductor
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+menu "Application modules"
+
+rsource "Kconfig.app_state_test"
+endmenu
