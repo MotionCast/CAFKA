@@ -10,6 +10,10 @@ config CAFKA_SETTINGS_LOADER
 	bool "Enable the CAF settings loader module and its dependencies"
 	select CAF_SETTINGS_LOADER
 	select SETTINGS
+	select FLASH
+	select FLASH_PAGE_LAYOUT
+	select FLASH_MAP
+	select NVS
 	help
 	  Enable the CAF power manager module and its dependencies
 
