@@ -1,14 +1,10 @@
 #
-# Copyright (c) 2018 Nordic Semiconductor ASA
+# Copyright (c) 2023 Jacob Sánchez Pérez
 #
-# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+# SPDX-License-Identifier: BSD-3-Clause
 #
 
-menu "caf-test"
+menu "CAF Kconfig Assistant"
 rsource "src/modules/Kconfig"
 rsource "Kconfig.defaults"
-endmenu
-
-menu "Zephyr Kernel"
-source "Kconfig.zephyr"
 endmenu

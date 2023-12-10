@@ -1,7 +1,7 @@
 #
-# Copyright (c) 2023 mocast
+# Copyright (c) 2023 Jacob Sánchez Pérez
 #
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: BSD-3-Clause
 #
 
 # Starter configuration overlay for CAF BLE state module.

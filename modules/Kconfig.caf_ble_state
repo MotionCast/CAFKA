@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA BLE State"
+
+config CAFKA_BLE_STATE
+	bool "Enable the CAF Bluetooth Low Energy state module"
+	select BT
+	select BT_SMP
+	select CAF_BLE_STATE
+	help
+	  Enable the CAF BLE state module
+
+endmenu

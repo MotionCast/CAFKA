@@ -1,16 +1,40 @@
-# CAFKA
+# CAFKA: CAF Kconfig Assistant
 
 > Kafkaesque: having a nightmarishly complex, bizarre, or illogical quality
 
-CAFKA is a template built around the Common Application Framework of the
-nRF Connect SDK, that allows you to enable modules without manually enabling
-their dependencies or configurations.
+A template built around the Common Application Framework of the nRF Connect SDK,
+that makes it possible to enable CAF modules with one line of configuration each,
+providing sensible defaults to make your life easier.
+
+
 
 #### Disclaimer
 CAFKA is still experimental so you may run into some issues.
 You may post them under this repository and you will receive advice.
 
-### Modules
+
+
+## Installing
+
+**As a Git submodule (recommended):**
+
+```
+git submodule add https://github.com/mocast/CAFKA.git src/cafka
+cd src/cafka
+git checkout master
+```
+
+Then, in your Kconfig, add this to include the CAFKA modules
+
+```
+menu "CAFKA"
+rsource "src/cafka/Kconfig"
+endmenu
+```
+
+
+
+## Modules
 
 The following modules are available, with more to come:
 
@@ -56,19 +80,6 @@ MY_BLE_STATE_MODULE_ENABLE=y
 ```
 
 
-## Example Modules
-
-The following modules are included as placeholders that are supposed to react to different events:
-
-- app_state_example.c: Barebones module that listens to app_state_event.
-- ble_state_example.c: Listens to BLE peer_state_event.
-
-
-If you are using this repository as a template, you will want to either overwrite these
-or delete them, as well as their usages in `src/modules/CMakeLists.txt`, and their respective
-Kconfig files under `src/modules/`.
-
-
 ### Configuration
 
 To fine tune the configuration of any module, modify the corresponding
@@ -77,10 +88,12 @@ To fine tune the configuration of any module, modify the corresponding
 You should of course also be able to directly set them in `prj.conf`.
 
 
+
 ## Licence
 
-This template is currently under the GNU General Public License v2.
-If you are interested in using this project under a different licence, simply raise an issue.
+This template is licensed under the 3-Clause BSD License.
+
+
 
 
 <!-- MODULES -->

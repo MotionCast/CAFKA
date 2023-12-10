@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA Power Manager"
+
+config CAFKA_POWER_MANAGER
+	bool "Enable the CAF power manager module"
+	select CAF_POWER_MANAGER
+	select CAF_PM_EVENTS
+	help
+	  Enable the CAF power manager module
+
+endmenu

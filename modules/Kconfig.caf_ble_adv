@@ -1,0 +1,18 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA BLE Advertising"
+
+config CAFKA_BLE_ADV
+	bool "Enable the CAF BLE advertising module"
+	select CAF_BLE_ADV
+	select CAF_PM_EVENTS
+	# Bluetooth Low Energy state module
+	select CAFKA_BLE_STATE
+	help
+	  Enable the CAF BLE state module
+
+endmenu

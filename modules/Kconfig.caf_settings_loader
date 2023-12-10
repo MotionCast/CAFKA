@@ -1,0 +1,20 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA Settings Loader"
+
+config CAFKA_SETTINGS_LOADER
+	bool "Enable the CAF settings loader module"
+	select CAF_SETTINGS_LOADER
+	select SETTINGS
+	select FLASH
+	select FLASH_PAGE_LAYOUT
+	select FLASH_MAP
+	select NVS
+	help
+	  Enable the CAF power manager module
+
+endmenu

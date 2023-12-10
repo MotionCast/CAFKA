@@ -1,7 +1,7 @@
 #
-# Copyright (c) 2023 mocast
+# Copyright (c) 2023 Jacob Sánchez Pérez
 #
-# SPDX-License-Identifier: GPL-2.0-only
+# SPDX-License-Identifier: BSD-3-Clause
 #
 
 # Starter configuration overlay for CAF BLE advertising module.
@@ -21,7 +21,7 @@ config CAF_BLE_ADV_FAST_ADV
 config CAF_BLE_ADV_FILTER_ACCEPT_LIST
 	default n
 	help
-	  By default, enable filter accept list.
+	  By default, disable filter accept list.
 
 config BT_ADV_PROV_FLAGS
 	default y
@@ -43,5 +43,4 @@ config BT_ADV_PROV_TX_POWER
 	help
 	  By default, add TX power to advertising providers
 
-
-endif # CAF_BLE_ADV
+endif

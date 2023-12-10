@@ -1,25 +1,24 @@
 #
-# Copyright (c) 2018 Nordic Semiconductor
+# Copyright (c) 2023 Jacob Sánchez Pérez
 #
-# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+# SPDX-License-Identifier: BSD-3-Clause
 #
 
-menu "Application modules"
+menu "CAFKA Modules"
 
+# Power and Settings
 rsource "Kconfig.caf_power_manager"
 rsource "Kconfig.caf_power_manager.default"
 rsource "Kconfig.caf_settings_loader"
 
+# Bluetooth
 rsource "Kconfig.ble.default"
 rsource "Kconfig.caf_ble_state"
 rsource "Kconfig.caf_ble_adv"
 rsource "Kconfig.caf_ble_adv.default"
 rsource "Kconfig.caf_ble_bond"
 
-rsource "Kconfig.caf_leds"
-
-# Custom modules
-rsource "Kconfig.app_state_example" # Barebones listener
-rsource "Kconfig.ble_state_example" # Listens to BLE peer events
+# Peripherals
+rsource "Kconfig.caf_buttons"
 
 endmenu
