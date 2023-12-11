@@ -5,6 +5,6 @@
 #
 
 menu "CAF Kconfig Assistant"
-rsource "src/modules/Kconfig"
+rsource "modules/Kconfig"
 rsource "Kconfig.defaults"
 endmenu
