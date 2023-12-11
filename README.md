@@ -38,12 +38,30 @@ endmenu
 
 The following modules are available, with more to come:
 
-- CAKFA_BLE_STATE: Bluetooth LE state module ([docs][ble_state])
-- CAFKA_BLE_ADV: Bluetooth LE advertising module ([docs][ble_adv])
-- CAFKA_BLE_BOND: Bluetooth LE bond module ([docs][ble_bond])
-- CAFKA_POWER_MANAGER: Power manager module ([docs][power_mgr])
-- CAFKA_SETTINGS_LOADER: Settings loader module ([docs][settings])
-- CAFKA_LEDS: LED module ([docs][leds])
+
+| Category             | CAF Module                  | Setting               |
+|----------------------|-----------------------------|-----------------------|
+| Bluetooth Low Energy & LTE                                                 |
+|                      | [BLE Advertising][ble_adv]  | CAKFA_BLE_ADV         |
+|                      | [BLE Bond][ble_bond]        | CAKFA_BLE_BOND        |
+|                      | [BLE State][ble_state]      | CAKFA_BLE_STATE       |
+|                      | Network State               | -                     |
+| Power Manager                                                              |
+|                      | [Power Manager][power_mgr]  | CAFKA_POWER_MANAGER   |
+|                      | BLE State                   | -                     |
+|                      | Buttons KeepAlive           | -                     |
+| System                                                                     |
+|                      | [SMP DFU via BLE][smp]      | CAFKA_BLE_SMP         |
+|                      | [Settings Loader][settings] | CAFKA_SETTINGS_LOADER |
+|                      | Shell                       | -                     |
+| Input/Output Devices                                                       |
+|                      | [Buttons][buttons]          | CAFKA_BUTTONS         |
+|                      | [Click Detector][click]     | CAFKA_CLICK_DETECTOR  |
+|                      | [Sensor Manager][sensors]   | CAFKA_SENSOR_MANAGER  |
+|                      | Sensor Data Agg.            | -                     |
+|                      | [GPIO LEDs][leds]           | CAFKA_LEDS_GPIO       |
+|                      | [PWM LEDs][leds]            | CAFKA_LEDS_PWM        |
+
 
 ### Enabling Modules
 
@@ -83,7 +101,7 @@ MY_BLE_STATE_MODULE_ENABLE=y
 ### Configuration
 
 To fine tune the configuration of any module, modify the corresponding
-`Kconfig.[module].default` file located under `src/modules`.
+`Kconfig.[module].default` file located under `modules`.
 
 You should of course also be able to directly set them in `prj.conf`.
 
@@ -103,3 +121,7 @@ This template is licensed under the 3-Clause BSD License.
 [power_mgr]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/power_manager.html
 [settings]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/settings_loader.html
 [leds]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/leds.html
+[buttons]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/buttons.html
+[click]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/click_detector.html
+[smp]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/ble_smp.html
+[sensors]: https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/caf/sensor_manager.html

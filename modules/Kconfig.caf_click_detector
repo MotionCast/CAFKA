@@ -11,6 +11,8 @@ config CAFKA_CLICK_DETECTOR
 	select CAF_CLICK_DETECTOR
 	select CAF_BUTTON_EVENTS
 	select CAF_CLICK_DETECTOR_PM_EVENTS
+	# Button module
+	select CAFKA_BUTTONS
 	help
 	  Enable the CAF click detector module
 

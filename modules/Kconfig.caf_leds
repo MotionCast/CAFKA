@@ -1,0 +1,41 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA LEDs"
+
+config CAFKA_LEDS
+	bool "Enable the CAF LEDS module"
+	select LED
+	select CAF_LEDS
+
+	help
+	  Enable the CAF LEDS module
+
+
+config CAFKA_LEDS_PWM
+	bool "Enable the CAF LEDS module"
+	select PWM
+	select LED_PWM
+	select CAF_LEDS_PWM
+	# Base requirements
+	select CAFKA_LEDS
+
+	help
+	  Enable the CAF LEDS PWM module
+
+
+config CAFKA_LEDS_GPIO
+	bool "Enable the CAF LEDS module"
+	select GPIO
+	select LED_GPIO
+	select CAF_LEDS_GPIO
+	# Base requirements
+	select CAFKA_LEDS
+
+	help
+	  Enable the CAF LEDS GPIO module
+
+endmenu

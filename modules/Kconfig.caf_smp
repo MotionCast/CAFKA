@@ -1,0 +1,23 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA Simple Management Protocol"
+
+config CAFKA_BLE_SMP
+	bool "Enable the CAF Simple Management Protocol module"
+	select CAF_BLE_SMP
+	select MCUMGR_GRP_IMG
+	select MCUMGR_MGMT_NOTIFICATION_HOOKS
+	select MCUMGR_GRP_IMG_UPLOAD_CHECK_HOOK
+	select MCUMGR_TRANSPORT_BT
+	select BOOTLOADER_MCUBOOT
+	select MCUMGR_GRP_OS
+	# Bluetooth State Module
+	select CAFKA_BLE_STATE
+	help
+	  Enable the CAF Simple Management Protocol module
+
+endmenu
