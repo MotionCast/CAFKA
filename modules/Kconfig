@@ -20,5 +20,7 @@ rsource "Kconfig.caf_ble_bond"
 
 # Peripherals
 rsource "Kconfig.caf_buttons"
+rsource "Kconfig.caf_click_detector"
+rsource "Kconfig.caf_sensor_manager"
 
 endmenu

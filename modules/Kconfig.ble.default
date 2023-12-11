@@ -25,6 +25,11 @@ config BT_DEVICE_APPEARANCE
 	help
 	  The default BT peripheral appearance.
 
+config BT_CONN_CTX
+	default y
+	help
+	  Bluetooth context library (helps keep connection presumably)
+
 endif # BT_PERIPHERAL
 
 endif # CAFKA_BLE_STATE

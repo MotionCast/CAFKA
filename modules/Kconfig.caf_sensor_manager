@@ -1,0 +1,16 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA Sensor Manager"
+
+config CAFKA_SENSOR_MANAGER
+	bool "Enable the CAF sensor manager"
+	select SENSOR
+	select CAF_SENSOR_MANAGER
+	help
+	  Enable the CAF sensor manager module
+
+endmenu

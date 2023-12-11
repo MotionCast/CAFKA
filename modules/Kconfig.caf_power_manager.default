@@ -8,8 +8,13 @@
 
 if CAFKA_POWER_MANAGER
 
-# choice PM_POLICY
-	# default PM_POLICY_CUSTOM
-# endchoice
+choice PM_POLICY
+	default PM_POLICY_CUSTOM
+endchoice
 
-endif # CAFKA_POWER_MANAGER
+config CAF_POWER_MANAGER_TIMEOUT
+	default 20
+	help
+	  The default power timeout
+
+endif

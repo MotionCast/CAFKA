@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA Click Detector"
+
+config CAFKA_CLICK_DETECTOR
+	bool "Enable the CAF click detector module"
+	select CAF_CLICK_DETECTOR
+	select CAF_BUTTON_EVENTS
+	select CAF_CLICK_DETECTOR_PM_EVENTS
+	help
+	  Enable the CAF click detector module
+
+endmenu
