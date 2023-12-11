@@ -10,6 +10,7 @@ menu "CAFKA Modules"
 rsource "Kconfig.caf_power_manager"
 rsource "Kconfig.caf_power_manager.default"
 rsource "Kconfig.caf_settings_loader"
+rsource "Kconfig.caf_smp"
 
 # Bluetooth
 rsource "Kconfig.ble.default"
@@ -19,8 +20,12 @@ rsource "Kconfig.caf_ble_adv.default"
 rsource "Kconfig.caf_ble_bond"
 
 # Peripherals
+rsource "Kconfig.caf_leds"
 rsource "Kconfig.caf_buttons"
 rsource "Kconfig.caf_click_detector"
 rsource "Kconfig.caf_sensor_manager"
+
+# Extra
+rsource "Kconfig.ble.all"
 
 endmenu

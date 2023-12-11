@@ -45,6 +45,7 @@ The following modules are available, with more to come:
 |                      | [BLE Advertising][ble_adv]  | CAKFA_BLE_ADV         |
 |                      | [BLE Bond][ble_bond]        | CAKFA_BLE_BOND        |
 |                      | [BLE State][ble_state]      | CAKFA_BLE_STATE       |
+|                      | BLE State/Adv/Bond          | CAKFA_BLE_ALL         |
 |                      | Network State               | -                     |
 | Power Manager                                                              |
 |                      | [Power Manager][power_mgr]  | CAFKA_POWER_MANAGER   |

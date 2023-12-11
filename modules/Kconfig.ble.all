@@ -1,0 +1,17 @@
+#
+# Copyright (c) 2023 Jacob Sánchez Pérez
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+menu "CAFKA BLE all modules"
+
+config CAFKA_BLE_ALL
+	bool "Enable all the CAF Bluetooth Low Energy modules"
+	select CAFKA_BLE_STATE
+	select CAFKA_BLE_ADV
+	select CAFKA_BLE_BOND
+	help
+	  Enable all the CAF BLE modules
+
+endmenu
