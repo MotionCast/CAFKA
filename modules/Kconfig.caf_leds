@@ -19,7 +19,6 @@ config CAFKA_LEDS_PWM
 	bool "Enable the CAF LEDS module"
 	select PWM
 	select LED_PWM
-	select CAF_LEDS_PWM
 	# Base requirements
 	select CAFKA_LEDS
 
@@ -31,11 +30,24 @@ config CAFKA_LEDS_GPIO
 	bool "Enable the CAF LEDS module"
 	select GPIO
 	select LED_GPIO
-	select CAF_LEDS_GPIO
 	# Base requirements
 	select CAFKA_LEDS
 
 	help
 	  Enable the CAF LEDS GPIO module
+
+
+if CAFKA_LEDS_GPIO
+choice CAF_LEDS_OUTPUT
+	default CAF_LEDS_GPIO
+endchoice
+endif
+
+if CAFKA_LEDS_PWM
+choice CAF_LEDS_OUTPUT
+	default CAF_LEDS_PWM
+endchoice
+endif
+
 
 endmenu
